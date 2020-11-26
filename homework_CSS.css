@@ -1,0 +1,221 @@
+body{
+    font-family:'Oswald', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin:0;
+}
+.header{
+    color: white;
+    text-align: center;
+    margin-bottom:25%;
+    margin-left:10%;
+    margin-right:10%;
+    padding-top:15%;
+    font-size:100px;
+    height:75%;
+}
+.Text_main_index{
+    text-align: center;
+    color:white;
+    font-size: xx-large;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.Text_main_column{
+    text-align: left;
+    color:lightgrey;
+    font-size: large;
+    background-color:#28041E;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, [col] 30%);
+    grid-gap: 3%;
+}
+.Text_main{
+    text-align: left;
+    color:lightgrey;
+    font-size: large;
+    background-color:#28041E;
+    margin:5% 15%;
+    padding-top: 10px;
+    padding-bottom:5%;
+    padding-right:5%;
+    padding-left:5%;
+}
+
+.Text_main_coding{
+    text-align: center;
+    color:lightgrey;
+    font-size: xx-large;
+    background-color:#28041E;
+    margin:5% 15%;
+    padding-left:0px;
+    padding-right: 0px;
+    padding-bottom: 10%;
+}
+
+.Special_text{
+    color:white;
+    font-size: xx-large;
+    text-align: left;
+    margin-top:5%;
+    margin-bottom: 2%;
+}
+
+
+li{
+    text-align: left;
+    margin:30px 0px
+}
+a:link{
+    color: white;
+    text-decoration: none;
+    margin:2%;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+    padding:2%;
+}
+a:hover{
+    color:darkgray;
+    text-decoration: none;
+    margin:2%;
+}
+.dropbtn {
+    background-color: #28041E;
+    padding: 11px;
+    display: inline;
+    float: left;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+  } 
+.dropbtn:hover, .dropbtn:focus {
+    background-color: lavender;
+}
+.dropdown {
+    background-color:  #28041E;
+    position: inherit;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#28041E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+  }
+.dropdown-content a:hover {
+    background-color:lavender;
+    color: #28041E;
+    width: fit-content;
+}
+
+.show {display:block;}
+
+@media (min-width: 1200px) {
+    .dropbtn {
+      display: none;
+    }
+}
+
+nav{
+    font-size: xx-large;
+    position: fixed;
+    background-color:#28041E;
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 10%;
+    z-index: 1;
+}
+
+nav a.active {
+    background-color: lavender;
+    color: #28041E;
+    height: inherit;
+    padding:10px;
+}
+
+@media (max-width: 1200px) {
+    .nav_bar{
+      display: none;
+    }
+  }
+.column{
+    float: left;
+    text-align: center;
+}
+.icon{
+    font-size: 100px;
+}
+
+  
+.flip-card {
+    background-color: transparent;
+    width:60%;
+    height:250px; 
+    padding-left:20%;
+    perspective: 1000px;
+    z-index: -1;
+  }
+
+.flip-card-inner {
+    position: relative;
+    widows: 100%;
+    height:100%; 
+    text-align: center;
+    transition: transform 1.3s;
+    transform-style: preserve-3d;
+  }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+.flip-card-back {
+    background-color:#827E81;
+    color: white;
+    transform: rotateY(180deg);
+    border: 1px solid #f1f1f1;
+  }
+.flip-card_text{
+    color:white;
+    font-size: 50px;
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background: white;
+    background-image: linear-gradient(to right,#7d757a, white,#7d757a);
+    margin-top: 5%;
+}
+
+footer{
+    background-color:#28041E;
+    font-size: x-large;
+    color:white;
+    text-align: center;
+    height: 15%;
+}
